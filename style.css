@@ -38,18 +38,6 @@ body {
     filter: brightness(30%) contrast(130%) saturate(120%);
 }
 
-/* ----- PLAN DISTINCT (Boîte avec flou et fond visible) ----- */
-.container {
-    width: 90%;
-    max-width: 900px;
-    background: rgba(20, 20, 20, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-radius: 20px;
-    margin: 50px auto;
-    box-shadow: 0px 0px 50px rgba(255, 30, 86, 0.8);
-}
-
 /* ----- HEADER ----- */
 header {
     width: 100%;
@@ -65,21 +53,17 @@ h1 {
     text-shadow: 0px 0px 25px rgba(255, 30, 86, 1);
 }
 
-/* ----- SECTIONS ----- */
+/* ----- SECTIONS (GARDER SEULEMENT LE TEXTE) ----- */
 section {
-    background: rgba(30, 30, 30, 0.95);
-    border-radius: 15px;
     margin: 40px auto;
     padding: 50px;
-    box-shadow: 0px 0px 50px rgba(255, 30, 86, 0.7);
-    backdrop-filter: blur(12px);
+    text-shadow: 0px 0px 20px rgba(255, 30, 86, 0.7);
 }
 
 section h2 {
     color: #ff4757;
     font-size: 2rem;
     margin-bottom: 20px;
-    text-shadow: 0px 0px 25px rgba(255, 71, 87, 1);
 }
 
 section p {
@@ -88,27 +72,12 @@ section p {
     color: #e0e0e0;
 }
 
-/* ----- MEMBRES ----- */
+/* ----- MEMBRES (SUPPRIMER LES BOÎTES) ----- */
 .members-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-}
-
-.member {
-    text-align: center;
-    background: rgba(50, 50, 50, 0.95);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 40px rgba(255, 71, 87, 0.8);
-    backdrop-filter: blur(8px);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.member:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 50px rgba(255, 71, 87, 1);
 }
 
 .member img {
@@ -121,13 +90,6 @@ section p {
 
 .member img:hover {
     transform: scale(1.1);
-}
-
-.member p {
-    margin-top: 10px;
-    font-size: 1.3rem;
-    color: #ffffff;
-    text-shadow: 0px 0px 10px rgba(255, 30, 86, 0.7);
 }
 
 /* ----- BOUTON WHATSAPP ----- */
@@ -166,11 +128,6 @@ footer {
         font-size: 2.8rem;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     section {
         padding: 30px;
     }
@@ -184,4 +141,4 @@ footer {
         font-size: 1.1rem;
         padding: 12px 25px;
     }
-    }
+}
