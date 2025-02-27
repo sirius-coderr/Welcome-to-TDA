@@ -35,61 +35,61 @@ body {
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
-    filter: brightness(30%) contrast(150%) saturate(140%);
+    filter: brightness(35%) contrast(150%) saturate(140%);
 }
 
 /* ----- HEADER ----- */
 header {
     width: 100%;
     background: rgba(0, 0, 0, 0.85);
-    padding: 40px 0;
-    box-shadow: 0px 0px 40px rgba(255, 30, 86, 1);
+    padding: 30px 0;
+    box-shadow: 0px 0px 30px rgba(255, 30, 86, 1);
 }
 
 h1 {
     font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 6rem; /* Encore plus grand */
+    font-size: 5rem; /* Réduction */
     color: #ff1e56;
-    text-shadow: 0px 0px 40px rgba(255, 30, 86, 1);
+    text-shadow: 0px 0px 25px rgba(255, 30, 86, 1);
 }
 
 /* ----- SECTIONS ----- */
 section {
-    margin: 70px auto;
-    padding: 80px;
-    text-shadow: 0px 0px 35px rgba(255, 30, 86, 1);
+    margin: 50px auto;
+    padding: 60px;
+    text-shadow: 0px 0px 25px rgba(255, 30, 86, 1);
 }
 
 section h2 {
     color: #ff4757;
-    font-size: 3.5rem; /* Encore plus grand */
-    margin-bottom: 40px;
+    font-size: 2.5rem; /* Réduction */
+    margin-bottom: 30px;
 }
 
 section p {
-    font-size: 2rem; /* Encore plus grand */
-    line-height: 2.2;
+    font-size: 1.6rem; /* Réduction */
+    line-height: 1.8;
     color: #e0e0e0;
 }
 
-/* ----- MEMBRES (IMAGES PLUS GRANDES) ----- */
+/* ----- MEMBRES ----- */
 .members-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 50px;
 }
 
 .member img {
-    width: 400px; /* Agrandi */
-    height: 400px; /* Agrandi */
+    width: 350px; /* Légèrement réduit */
+    height: 350px; /* Légèrement réduit */
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: transform 0.3s;
 }
 
 .member img:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 /* ----- BOUTON WHATSAPP ----- */
@@ -98,55 +98,55 @@ section p {
     background: #25D366;
     color: #fff;
     font-weight: bold;
-    padding: 25px 50px; /* Agrandi */
-    border-radius: 50px;
+    padding: 20px 40px; /* Ajustement */
+    border-radius: 40px;
     text-decoration: none;
-    font-size: 2rem; /* Plus grand */
-    box-shadow: 0px 0px 50px rgba(37, 211, 102, 1);
+    font-size: 1.8rem; /* Réduction */
+    box-shadow: 0px 0px 40px rgba(37, 211, 102, 1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .whatsapp-button:hover {
-    transform: scale(1.2);
-    box-shadow: 0px 0px 70px rgba(37, 211, 102, 1);
+    transform: scale(1.15);
+    box-shadow: 0px 0px 60px rgba(37, 211, 102, 1);
 }
 
 /* ----- FOOTER ----- */
 footer {
     background: rgba(0, 0, 0, 0.9);
-    padding: 30px;
-    font-size: 1.8rem; /* Plus grand */
+    padding: 20px;
+    font-size: 1.5rem; /* Réduction */
     width: 100%;
     text-align: center;
     color: #ff4757;
-    text-shadow: 0px 0px 20px rgba(255, 30, 86, 1);
+    text-shadow: 0px 0px 15px rgba(255, 30, 86, 1);
 }
 
 /* ----- RESPONSIVE DESIGN ----- */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     section {
-        padding: 50px;
+        padding: 40px;
     }
 
     section h2 {
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
 
     section p {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .member img {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
     }
 
     .whatsapp-button {
-        font-size: 1.6rem;
-        padding: 20px 40px;
+        font-size: 1.4rem;
+        padding: 15px 30px;
     }
     }
