@@ -9,11 +9,10 @@
 
 body {
     background-color: #0d0d0d;
-    color: #ff1e56;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     overflow-x: hidden;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,25 +39,24 @@ body {
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
-    filter: brightness(50%) contrast(150%) saturate(130%);
+    filter: brightness(40%) contrast(130%) saturate(120%);
 }
 
 /* ----- HEADER ----- */
 header {
     width: 100%;
     max-width: 1200px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.85);
     padding: 20px 0;
     border-bottom: 3px solid #ff1e56;
     box-shadow: 0px 0px 15px rgba(255, 30, 86, 0.7);
-    text-align: center;
 }
 
 h1 {
     font-family: 'UnifrakturMaguntia', cursive;
     font-size: 3.5rem;
     color: #ff1e56;
-    text-shadow: 0px 0px 15px rgba(255, 30, 86, 1);
+    text-shadow: 0px 0px 20px rgba(255, 30, 86, 1);
 }
 
 /* ----- NAVIGATION ----- */
@@ -66,7 +64,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     padding-top: 10px;
 }
 
@@ -79,7 +77,7 @@ nav ul li a {
     color: #ff4757;
     font-weight: bold;
     font-size: 1.2rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s;
 }
 
 nav ul li a:hover {
@@ -91,17 +89,32 @@ nav ul li a:hover {
 section {
     width: 90%;
     max-width: 900px;
-    background: rgba(20, 20, 20, 0.9);
-    border-radius: 10px;
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 15px;
     margin: 40px auto;
     padding: 50px;
-    box-shadow: 0px 0px 25px rgba(255, 30, 86, 0.5);
+    box-shadow: 0px 0px 30px rgba(255, 30, 86, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+/* Texte dans les sections */
+section h2 {
+    color: #ff4757;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 15px rgba(255, 71, 87, 1);
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #e0e0e0;
 }
 
 /* Effet néon sur "monde de la purge" */
 .highlight {
     color: #ff4757;
-    text-shadow: 0px 0px 20px rgba(255, 71, 87, 1);
+    text-shadow: 0px 0px 25px rgba(255, 71, 87, 1);
     font-weight: bold;
 }
 
@@ -110,7 +123,7 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 }
 
 .member {
@@ -121,15 +134,22 @@ section {
     width: 220px;
     height: 220px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 4px solid #ff4757;
-    box-shadow: 0px 0px 25px rgba(255, 71, 87, 0.8);
+    box-shadow: 0px 0px 30px rgba(255, 71, 87, 0.8);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .member img:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 40px rgba(255, 71, 87, 1);
+    box-shadow: 0px 0px 50px rgba(255, 71, 87, 1);
+}
+
+.member p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(255, 30, 86, 0.7);
 }
 
 /* ----- BOUTON WHATSAPP ----- */
@@ -141,8 +161,8 @@ section {
     padding: 15px 30px;
     border-radius: 30px;
     text-decoration: none;
-    font-size: 1.2rem;
-    box-shadow: 0px 0px 20px rgba(37, 211, 102, 0.8);
+    font-size: 1.3rem;
+    box-shadow: 0px 0px 25px rgba(37, 211, 102, 0.8);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -153,7 +173,7 @@ section {
 
 /* ----- FOOTER ----- */
 footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     padding: 20px;
     font-size: 1rem;
     width: 100%;
@@ -166,12 +186,16 @@ footer {
 /* ----- RESPONSIVE DESIGN ----- */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    section {
+        padding: 30px;
     }
 
     .member img {
@@ -180,11 +204,7 @@ footer {
     }
 
     .whatsapp-button {
-        font-size: 1rem;
-        padding: 10px 20px;
+        font-size: 1.1rem;
+        padding: 12px 25px;
     }
-
-    section {
-        padding: 30px;
     }
-}
