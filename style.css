@@ -48,7 +48,6 @@ body {
     border-radius: 20px;
     margin: 50px auto;
     box-shadow: 0px 0px 50px rgba(255, 30, 86, 0.8);
-    border: 3px solid rgba(255, 30, 86, 0.7); /* Bordure plus grande pour le texte */
 }
 
 /* ----- HEADER ----- */
@@ -56,7 +55,6 @@ header {
     width: 100%;
     background: rgba(0, 0, 0, 0.85);
     padding: 20px 0;
-    border-bottom: 3px solid #ff1e56;
     box-shadow: 0px 0px 20px rgba(255, 30, 86, 0.8);
 }
 
@@ -75,7 +73,6 @@ section {
     padding: 50px;
     box-shadow: 0px 0px 50px rgba(255, 30, 86, 0.7);
     backdrop-filter: blur(12px);
-    border: 3px solid rgba(255, 30, 86, 0.9); /* Bordure plus visible */
 }
 
 section h2 {
@@ -119,7 +116,6 @@ section p {
     height: 230px;
     object-fit: cover;
     border-radius: 15px;
-    border: 2px solid #ff4757; /* Bordure réduite pour être plus fine */
     transition: transform 0.3s;
 }
 
@@ -160,7 +156,6 @@ footer {
     font-size: 1rem;
     width: 100%;
     text-align: center;
-    border-top: 3px solid #ff1e56;
     color: #ff4757;
     text-shadow: 0px 0px 10px rgba(255, 30, 86, 0.8);
 }
@@ -189,4 +184,4 @@ footer {
         font-size: 1.1rem;
         padding: 12px 25px;
     }
-                                  }
+    }
