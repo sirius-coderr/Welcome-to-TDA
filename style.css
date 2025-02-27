@@ -82,7 +82,14 @@ p {
     line-height: 1.6;
 }
 
-/* ----- MEMBRES (Photos Carrées) ----- */
+/* Effet néon sur "monde de la purge" */
+.highlight {
+    color: #ff4d6d;
+    text-shadow: 0px 0px 15px rgba(255, 0, 0, 1);
+    font-weight: bold;
+}
+
+/* ----- MEMBRES (Photos plus larges) ----- */
 .member {
     display: inline-block;
     margin: 25px;
@@ -92,56 +99,8 @@ p {
 
 /* Style des images des membres */
 .member img {
-    width: 200px;
+    width: 300px;
     height: 200px;
     border-radius: 10px; /* Coins légèrement arrondis */
     border: 5px solid #ff4d6d;
-    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
-    transition: transform 0.3s, filter 0.3s, box-shadow 0.3s;
-    filter: brightness(85%) contrast(130%) saturate(130%);
-}
-
-/* Effet hover : agrandissement, glow et rotation */
-.member img:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 30px rgba(255, 0, 0, 1);
-    filter: brightness(100%) contrast(150%) saturate(150%);
-}
-
-/* Nom du membre avec un effet néon */
-.member p {
-    margin-top: 12px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ff4d6d;
-    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.9);
-}
-
-/* ----- BOUTON WHATSAPP ----- */
-.whatsapp-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(45deg, #ff006e, #ff4d6d);
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8);
-    transition: 0.3s ease-in-out;
-}
-
-.whatsapp-button:hover {
-    background: linear-gradient(45deg, #ff4d6d, #ff006e);
-    box-shadow: 0px 0px 15px rgba(255, 0, 0, 1);
-}
-
-/* ----- FOOTER ----- */
-footer {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-    font-size: 0.9rem;
-    border-top: 2px solid #e63946;
-    color: #ff4d6d;
-    text-shadow: 0px 0px 5px rgba(255, 0, 0, 0.7);
-    }
+    box-shadow: 0px
