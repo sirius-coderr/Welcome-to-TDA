@@ -85,35 +85,36 @@ p {
 /* ----- MEMBRES ----- */
 .member {
     display: inline-block;
-    margin: 20px;
+    margin: 25px;
     text-align: center;
     position: relative;
 }
 
+/* Style des images des membres */
 .member img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 3px solid #ff4d6d;
-    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+    border: 5px solid #ff4d6d;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
     transition: transform 0.3s, filter 0.3s, box-shadow 0.3s;
-    filter: brightness(80%) contrast(120%) saturate(120%);
+    filter: brightness(85%) contrast(130%) saturate(130%);
 }
 
-/* Effet glitch + distorsion */
+/* Effet hover : agrandissement, glow et rotation */
 .member img:hover {
-    transform: scale(1.1) rotate(1deg);
-    box-shadow: 0px 0px 25px rgba(255, 0, 0, 1);
+    transform: scale(1.15) rotate(2deg);
+    box-shadow: 0px 0px 30px rgba(255, 0, 0, 1);
     filter: brightness(100%) contrast(150%) saturate(150%);
 }
 
 /* Nom du membre avec un effet néon */
 .member p {
-    margin-top: 10px;
-    font-size: 1.2rem;
+    margin-top: 12px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #ff4d6d;
-    text-shadow: 0px 0px 8px rgba(255, 0, 0, 0.8);
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.9);
 }
 
 /* ----- BOUTON WHATSAPP ----- */
